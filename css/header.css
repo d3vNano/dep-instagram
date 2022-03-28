@@ -79,27 +79,24 @@ ion-icon:hover {
 }
 
 .search-block {
-    position: center;
     width: 215px;
     height: 28px;
-
-    background: #FAFAFA;
-    border: 1px solid #DBDBDB;
+  
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
     box-sizing: border-box;
     border-radius: 3px;
-
+  
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.search-block h6 {
+  }
+  
+  .search-block input {
     font-weight: 400;
     font-size: 12px;
     text-align: center;
-    
-    color: #979797;
-}
+  }
 
 .login-block {
     padding: 0 15px;
