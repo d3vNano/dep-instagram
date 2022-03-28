@@ -12,12 +12,24 @@ a {
     text-decoration: none;
 }
 
+ion-icon:hover {
+    cursor: pointer;
+    filter: opacity(50%);
+}
+
+.link-indicator:hover {
+    cursor: pointer;
+}
+
 .header-cont {
-    position: fixed;
     width: 100%;
     height: 54px;
+
+    position: fixed;
     left: 0px;
     top: 0px;
+
+    z-index: 2;
 
     background: #FFFFFF;
     border: 1px solid #DBDBDB;
@@ -25,7 +37,6 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 1;
 }
 
 .center {
@@ -33,16 +44,21 @@ a {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-
 }
 
-.logo-block a {
+.header-class {
     display: flex;
+    align-items: center;
+}
+
+.logo-cont {
+    display: flex;
+    align-items: center;
     justify-content: space-between;
     padding: 0 15px;
 }
 
-.logo-block ion-icon {
+.icon-block ion-icon {
     width: 22px;
     height: 22px;
 }
@@ -52,6 +68,10 @@ a {
     width: 1px;
     height: 22px;
     background: #DBDBDB;
+}
+
+.logo-mobile {
+    display: none;
 }
 
 .logo-block img {
@@ -89,4 +109,77 @@ a {
     width: 22px;
     height: 22px;
     margin: 0px 5px;
+}
+
+.footer-mobile {
+    display: none;
+}
+
+@media (max-width: 614px) {
+
+    body {
+        width: 100%;
+    }
+
+    .header-cont {
+        width: 100%;
+    }
+
+    .center {
+        width: 100%;
+    }
+
+    .person-outline {
+        display: none;
+    }
+
+    .heart-outline {
+        display: none;
+    }
+
+    .compass-outline {
+        display: none;
+    }
+
+    .spacer {
+        display: none;
+    }
+
+    .search-block{
+        display: none;
+    }
+
+    .logo-block img {
+        display: none;
+    }
+
+    .logo-mobile {
+        display: initial;
+    }
+    
+    .footer-mobile {
+        width: 100%;
+        height: 54px;
+        padding: 0 10px;
+        background-color: #FFFFFF;
+        border: 1px solid #DBDBDB;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        position: fixed;
+        bottom: 0;
+        left: 0;
+    }
+
+    .footer-mobile ion-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    ion-icon .home-mobile:hover { 
+        background-image: url(home-outline);
+        
+    }
 }

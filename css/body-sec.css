@@ -2,8 +2,13 @@
     box-sizing: border-box;
 }
 
+.sec-cont-block{
+    width: 300px;
+    position: relative;
+}
+
 .sec-cont {
-    width: 270px;
+    position: fixed;
 }
 
 .user-cont {
@@ -137,3 +142,9 @@
 
     color: #C7C7C7;
 }
+
+@media (max-width: 935px) {
+    .sec-cont {
+        display: none;
+    }
+  }
